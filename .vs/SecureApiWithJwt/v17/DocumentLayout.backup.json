@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Intern_ISC\\SecureApiWithJwt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|d:\\intern_isc\\secureapiwithjwt\\controllers\\allowaccesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|solutionrelative:controllers\\allowaccesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|d:\\intern_isc\\secureapiwithjwt\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Intern_ISC\\SecureApiWithJwt\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\Intern_ISC\\SecureApiWithJwt\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T08:26:09.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AllowAccessController.cs",
+              "DocumentMoniker": "D:\\Intern_ISC\\SecureApiWithJwt\\Controllers\\AllowAccessController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AllowAccessController.cs",
+              "ToolTip": "D:\\Intern_ISC\\SecureApiWithJwt\\Controllers\\AllowAccessController.cs",
+              "RelativeToolTip": "Controllers\\AllowAccessController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAA4wBEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T08:25:37.95Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
