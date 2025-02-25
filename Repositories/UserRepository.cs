@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SecureApiWithJwt.DTOs.Requests;
 using SecureApiWithJwt.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -12,6 +13,12 @@ namespace SecureApiWithJwt.Repositories
         public UserRepository(AppDbContext context)
         {
             _context = context;
+        }
+
+        // Xac thuc dang nhap
+        public async Task<User> LoginAsync(string username)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
         }
 
         // Lay ra User theo id

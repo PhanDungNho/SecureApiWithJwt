@@ -11,5 +11,6 @@ namespace SecureApiWithJwt.Services.IServices
         Task<ApiResponse<UserResponse>> CreateUserAsync(UserRequest userRequest);
         Task<ApiResponse<UserResponse>> UpdateUserAsync(int id, UserRequest userRequest);
         Task<ApiResponse<UserResponse>> DeleteUserAsync(int id);
+        Task<ApiResponse<LoginResponse>> LoginAsync(LoginRequest loginRequest);
     }
 }

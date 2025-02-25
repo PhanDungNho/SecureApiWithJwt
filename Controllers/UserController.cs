@@ -2,6 +2,7 @@
 using SecureApiWithJwt.Services.IServices;
 using SecureApiWithJwt.DTOs.Requests;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SecureApiWithJwt.Controllers
 {
@@ -69,6 +70,17 @@ namespace SecureApiWithJwt.Controllers
                 return Ok(response);
             }
             return NotFound(response);
+        }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
+        {
+            var response = await _userService.LoginAsync(loginRequest);
+            if (response.Code == 0)
+            {
+                return Ok(response);
+            }
+            return BadRequest(response);
         }
     }
 }

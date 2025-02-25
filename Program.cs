@@ -9,8 +9,14 @@ using SecureApiWithJwt.Services.IServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Dang ky cau hinh tu appsettings.json
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+
 // Load file .env
 Env.Load();
+
+// Cau hinh JWT
+builder.Services.ConfigureJwtAuthentication(builder.Configuration);
 
 //Lay gia tri cua bien DATABASE_URL trong file .env
 var connectionString = Env.GetString("DATABASE_URL");
@@ -28,6 +34,9 @@ builder.Services.AddScoped<IRoleService, RoleService>();
 // Add service and repositoty role
 builder.Services.AddScoped<AllowAccessRepository>();
 builder.Services.AddScoped<IAllowAccessService, AllowAccessService>();
+
+// Add service and repositoty jwt
+builder.Services.AddScoped<IJwtService, JwtService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -57,6 +66,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

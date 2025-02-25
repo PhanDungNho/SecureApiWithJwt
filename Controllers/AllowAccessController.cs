@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SecureApiWithJwt.DTOs.Requests;
 using SecureApiWithJwt.Services.IServices;
 
@@ -16,6 +17,7 @@ namespace SecureApiWithJwt.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllowAccessesAsync()
         {
             var response = await _allowAccessService.GetAllowAccessesAsync();

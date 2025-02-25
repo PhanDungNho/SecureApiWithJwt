@@ -12,12 +12,14 @@ namespace SecureApiWithJwt.Services
     public class UserService : IUserService
     {
         private readonly UserRepository _userRepository;
+        private readonly IJwtService _iJwtService;
         private readonly IMapper _mapper;
 
-        public UserService(UserRepository userRepository, IMapper mapper)
+        public UserService(UserRepository userRepository, IMapper mapper, IJwtService iJwtService)
         {
             _userRepository = userRepository;
             _mapper = mapper;
+            _iJwtService = iJwtService;
         }
 
         // Lay tat ca users
@@ -86,6 +88,25 @@ namespace SecureApiWithJwt.Services
             {
                 return ApiResponse<UserResponse>.Error(new Dictionary<string, string[]> { { "Delete", new string[] { "Error deleting user", ex.Message } } });
             }
+        }
+
+        // Dang nhap
+        public async Task<ApiResponse<LoginResponse>> LoginAsync(LoginRequest loginRequest)
+        {
+            var user = await _userRepository.LoginAsync(loginRequest.Username);
+
+            if (user == null || user.Password != loginRequest.Password) // Hash mật khẩu nếu cần
+            {
+                return ApiResponse<LoginResponse>.NotFound("Invalid username or password");
+            }
+
+            // Cap token cho user
+            var token = _iJwtService.GenerateToken(user);
+
+            var userResponse = _mapper.Map<LoginResponse>(user);
+            userResponse.Token = token;
+
+            return ApiResponse<LoginResponse>.Success(userResponse);
         }
     }
 }

@@ -235,5 +235,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SecureApiWithJwt.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/user/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "SecureApiWithJwt.DTOs.Requests.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
