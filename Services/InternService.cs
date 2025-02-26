@@ -79,7 +79,8 @@ namespace SecureApiWithJwt.Services
             {
                 return ApiResponse<InternResponse>.NotFound();
             }
-
+            Console.WriteLine($"allowedColumnsResponse: {System.Text.Json.JsonSerializer.Serialize(allowedColumnsResponse)}");
+            Console.WriteLine($"allowedColumnList: {string.Join(", ", allowedColumnList)}");
             var filteredIntern = FilterInternProperties(intern, allowedColumnList);
             return ApiResponse<InternResponse>.Success(filteredIntern);
         }

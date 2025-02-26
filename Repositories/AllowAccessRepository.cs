@@ -26,7 +26,6 @@ namespace SecureApiWithJwt.Repositories
                 .FirstOrDefaultAsync(a => a.RoleId == roleId && a.TableName == tableName);
         }
 
-
         // Lay ra AllowAccess theo id
         public async Task<AllowAccess> GetByIdAsync(int id)
         {

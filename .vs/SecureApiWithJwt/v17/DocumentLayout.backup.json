@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|solutionrelative:services\\internservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|d:\\intern_isc\\secureapiwithjwt\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|d:\\intern_isc\\secureapiwithjwt\\services\\iservices\\iallowaccessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|solutionrelative:services\\iservices\\iallowaccessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|d:\\intern_isc\\secureapiwithjwt\\repositories\\allowaccessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|solutionrelative:repositories\\allowaccessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|d:\\intern_isc\\secureapiwithjwt\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C32960-6DCC-426F-8317-F7A1C1446356}|SecureApiWithJwt.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,14 +32,14 @@
               "RelativeDocumentMoniker": "Services\\InternService.cs",
               "ToolTip": "D:\\Intern_ISC\\SecureApiWithJwt\\Services\\InternService.cs",
               "RelativeToolTip": "Services\\InternService.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwCEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAswFIAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T02:37:56.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Intern_ISC\\SecureApiWithJwt\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\UserService.cs",
@@ -51,33 +47,19 @@
               "RelativeToolTip": "Services\\UserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T02:37:53.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T02:37:53.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "IAllowAccessService.cs",
               "DocumentMoniker": "D:\\Intern_ISC\\SecureApiWithJwt\\Services\\IServices\\IAllowAccessService.cs",
               "RelativeDocumentMoniker": "Services\\IServices\\IAllowAccessService.cs",
               "ToolTip": "D:\\Intern_ISC\\SecureApiWithJwt\\Services\\IServices\\IAllowAccessService.cs",
               "RelativeToolTip": "Services\\IServices\\IAllowAccessService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwAwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T02:37:28.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AllowAccessRepository.cs",
-              "DocumentMoniker": "D:\\Intern_ISC\\SecureApiWithJwt\\Repositories\\AllowAccessRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\AllowAccessRepository.cs",
-              "ToolTip": "D:\\Intern_ISC\\SecureApiWithJwt\\Repositories\\AllowAccessRepository.cs",
-              "RelativeToolTip": "Repositories\\AllowAccessRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T02:37:07.992Z",
               "EditorCaption": ""
             }
           ]
