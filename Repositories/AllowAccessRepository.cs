@@ -19,6 +19,14 @@ namespace SecureApiWithJwt.Repositories
             return await _context.AllowAccesses.ToListAsync();
         }
 
+        // Lay danh sach AllowAccess theo RoleId
+        public async Task<AllowAccess?> GetByRoleAndTableAsync(int roleId, string tableName)
+        {
+            return await _context.AllowAccesses
+                .FirstOrDefaultAsync(a => a.RoleId == roleId && a.TableName == tableName);
+        }
+
+
         // Lay ra AllowAccess theo id
         public async Task<AllowAccess> GetByIdAsync(int id)
         {

@@ -10,5 +10,6 @@ namespace SecureApiWithJwt.Services.IServices
         Task<ApiResponse<AllowAccessResponse>> CreateAsync(AllowAccessRequest allowAccessRequest);
         Task<ApiResponse<AllowAccessResponse>> UpdateAsync(int id, AllowAccessRequest allowAccessRequest);
         Task<ApiResponse<AllowAccessResponse>> DeleteAsync(int id);
+        Task<ApiResponse<string>> GetAllowedColumnsAsync(int roleId, string tableName);
     }
 }

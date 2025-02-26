@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using DotNetEnv;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -31,14 +32,24 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<RoleRepository>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 
-// Add service and repositoty role
+// Add service and repositoty AllowAccess
 builder.Services.AddScoped<AllowAccessRepository>();
 builder.Services.AddScoped<IAllowAccessService, AllowAccessService>();
+
+// Add service and repositoty Intern
+builder.Services.AddScoped<InternRepository>();
+builder.Services.AddScoped<IInternService, InternService>();
 
 // Add service and repositoty jwt
 builder.Services.AddScoped<IJwtService, JwtService>();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+    });
+builder.Services.AddHttpContextAccessor();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

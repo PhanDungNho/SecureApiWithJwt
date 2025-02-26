@@ -1,4 +1,6 @@
-﻿namespace SecureApiWithJwt.DTOs.Responses
+﻿using SecureApiWithJwt.Models;
+
+namespace SecureApiWithJwt.DTOs.Responses
 {
     public class LoginResponse
     {

@@ -26,11 +26,25 @@ namespace SecureApiWithJwt.Services
             return ApiResponse<List<AllowAccessResponse>>.Success(allowAccessesResponse);
         }
 
+        // Lay ra AllowAccess theo RoleId va TableName
+        public async Task<ApiResponse<string>> GetAllowedColumnsAsync(int roleId, string tableName)
+        {
+            var allowAccess = await _allowAccessRepository.GetByRoleAndTableAsync(roleId, tableName);
+
+            if (allowAccess == null)
+            {
+                return ApiResponse<string>.NotFound();
+            }
+
+            return ApiResponse<string>.Success(allowAccess.AccessProperties ?? "");
+        }
+
+
         // Lay ra AllowAccess theo id
         public async Task<ApiResponse<AllowAccessResponse>> GetByIdAsync(int id)
         {
             var allowAccess = await _allowAccessRepository.GetByIdAsync(id);
-            if (allowAccess == null)  return ApiResponse<AllowAccessResponse>.NotFound("AllowAccess not found");
+            if (allowAccess == null) return ApiResponse<AllowAccessResponse>.NotFound("AllowAccess not found");
 
             var allowAccessResponse = _mapper.Map<AllowAccessResponse>(allowAccess);
             return ApiResponse<AllowAccessResponse>.Success(allowAccessResponse);

@@ -53,6 +53,19 @@ namespace SecureApiWithJwt.DTOs.Responses
         {
             return new ApiResponse<T>(1, message, default, default);
         }
+
+        // Phan hoi unauthorized
+        public static ApiResponse<T> Unauthorized(string message = "Unauthorized")
+        {
+            return new ApiResponse<T>(1, message, default, default);
+        }
+
+        // phan hoi forbidden
+        public static ApiResponse<T> Forbidden(string message = "Forbidden")
+        {
+            return new ApiResponse<T>(1, message, default, default);
+        }
+
     }
 
 }

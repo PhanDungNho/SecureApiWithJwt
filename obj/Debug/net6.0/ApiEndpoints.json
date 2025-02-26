@@ -79,6 +79,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SecureApiWithJwt.Controllers.InternController",
+    "Method": "GetAllIntern",
+    "RelativePath": "api/intern",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SecureApiWithJwt.Controllers.InternController",
+    "Method": "GetInternById",
+    "RelativePath": "api/intern/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SecureApiWithJwt.Controllers.RoleController",
     "Method": "GetRoles",
     "RelativePath": "api/role",
